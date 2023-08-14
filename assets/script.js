@@ -9,8 +9,31 @@ function handleSearchSubmit(event) {
   getWeather(search);
   console.log(search);
 
-  localStorage.setitem("city", JSON.stringify(search));
+  localStorage.setItem("city", JSON.stringify(search));
+
+  var searchList = localStorage.getItem("city");
+
+  searchElement = $("<div>");
+  searchInfo = $("<p>").text(searchList);
+
+  $("#history").append(searchElement);
+  $(searchElement).append(searchInfo);
 }
+
+// function createSearchList() {
+//   var searchList = localStorage.getItem("city");
+
+//   searchElement = $("<div>");
+//   searchInfo = $("<p>").text(searchList);
+
+//   $("#history").append(searchElement);
+//   $(searchElement).append(searchInfo);
+// }
+
+// function setItemSearch() {
+//   var searchItem = $("#search-form");
+//   localStorage.setItem("city", searchItem.value);
+// }
 
 function getWeather(city) {
   var currentQueryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=c1a8bbd55c4994588b63beb4cd3b412d`;

@@ -1,22 +1,25 @@
 
 
+body {
+    background-color: rgba(137, 173, 253, 0.712) !important;
+}; 
 
 
+#today {
 
+    border-color: rgba(137, 173, 253, 0.712) !important;
+    border-width: 2px;
+    border-radius: 7px;
+}
 
 #forecast {
  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between ;
+
+    border-radius: 7px;
 };
 
 
 
-/* .future-cards {
- 
-    background-color: rgba(91, 91, 207, 0.555);
-    border-radius: 7px;
-
-} ; */
