@@ -1,10 +1,6 @@
 
 
-/* .future-cards {
 
- background-color: blue;
-
-}; */
 
 #forecast {
  
@@ -13,3 +9,10 @@
     justify-content: space-between;
     
 };
+
+.future-cards {
+ 
+    background-color: rgb(91, 91, 207);
+    border-radius: 7px;
+
+} ;
