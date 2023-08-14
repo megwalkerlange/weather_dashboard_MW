@@ -2,6 +2,8 @@
 
 
 
+
+
 #forecast {
  
     display: flex;
@@ -10,9 +12,11 @@
     
 };
 
-.future-cards {
+
+
+/* .future-cards {
  
-    background-color: rgb(91, 91, 207);
+    background-color: rgba(91, 91, 207, 0.555);
     border-radius: 7px;
 
-} ;
+} ; */

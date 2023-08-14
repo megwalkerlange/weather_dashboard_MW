@@ -8,6 +8,8 @@ function handleSearchSubmit(event) {
   if (!search) return;
   getWeather(search);
   console.log(search);
+
+  localStorage.setitem("city", JSON.stringify(search));
 }
 
 function getWeather(city) {
@@ -161,5 +163,15 @@ function getWeather(city) {
       $(futureDiv5).append(futureTemp5);
       $(futureDiv5).append(futureCloud5);
       $(futureDiv5).append(futureWind5);
+
+      // $("#search-button").click(function clear() {
+      //   $("#today").empty();
+      //   $("#forecast").empty();
+      // });
     });
 }
+
+$("#search-button").click(function clear() {
+  $("#today").empty();
+  $("#forecast").empty();
+});
